@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduNest – Grow Curious Minds</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -11,28 +11,37 @@
   </head>
   <body class="bg-gray-50 text-gray-800 font-sans">
 
-    <!-- Top Navigation (Logo only) -->
-    <div class="bg-white shadow-md sticky top-0 z-50 px-4 py-4 flex justify-between items-center">
-      <div class="text-xl font-bold text-blue-800">EduNest</div>
-    </div>
+    <!-- Hero Section with Overlay -->
+    <section class="relative w-full h-screen bg-gray-200">
+      <!-- Background Hero Image -->
+      <img src="u8733142363_Blender-style_Claymorphistic_kids_imagining_and_s_9637d8e2-5914-432f-9718-e9f2a1f19cb6_0.png"
+           alt="3D Hero Visual"
+           class="w-full h-full object-cover object-center absolute top-0 left-0 z-0" />
 
-    <!-- Hero Section -->
-    <section class="px-4 py-20 bg-gradient-to-br from-blue-100 to-green-100 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Grow Curious Minds Together</h1>
-      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-        The teaching companion for parents who want to spark world knowledge in their kids.
-      </p>
+      <!-- Overlay Content -->
+      <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10 flex flex-col">
+        <!-- Header -->
+        <header class="flex justify-between items-center px-6 py-4">
+          <div class="text-white text-2xl font-bold">EduNest</div>
+        </header>
 
-      <!-- CTA Form (Moved here) -->
-      <form class="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-4 mb-10">
-        <input type="email" placeholder="Enter your email"
-          class="rounded-md border px-4 py-2 w-72 focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <button type="submit"
-          class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">Join the Nest →</button>
-      </form>
+        <!-- Centered Tagline + Form -->
+        <div class="flex-grow flex items-center justify-center px-4">
+          <div class="text-center text-white max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Grow Curious Minds Together</h1>
+            <p class="text-lg md:text-xl mb-8">
+              The teaching companion for parents who want to spark knowledge, awareness and curiosity in their kids.
+            </p>
 
-      <img src="u8733142363_Blender-style_Claymorphistic_kids_imagining_and_s_9637d8e2-5914-432f-9718-e9f2a1f19cb6_0.png" alt="3D Hero Illustration"
-        class="mx-auto rounded-lg shadow-lg" />
+            <form class="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-4">
+              <input type="email" placeholder="Enter your email"
+                class="rounded-md border px-4 py-2 w-72 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+              <button type="submit"
+                class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">Join the Nest →</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Features Section -->
@@ -67,12 +76,12 @@
           <p>Quick email signup to join our early access list.</p>
         </div>
         <div>
-          <img src="u8733142363_Blender-style_Claymorphistic_kids_imagining_and_s_9637d8e2-5914-432f-9718-e9f2a1f19cb6_0.png" class="mx-auto mb-3" />
+          <img src="u8733142363_Parent_and_kids_enjoying_learning_about_the_world_0cd08a1c-373f-4d9f-b45d-36617f3f4b1c_3.png" class="mx-auto mb-3" />
           <h4 class="font-semibold mb-1">2. Set Your Child’s Interests</h4>
           <p>Customize based on age, learning style, and curiosity level.</p>
         </div>
         <div>
-          <img src="https://via.placeholder.com/80?text=3" class="mx-auto mb-3" />
+          <img src="u8733142363_Parent_and_kids_enjoying_learning_about_the_world_0cd08a1c-373f-4d9f-b45d-36617f3f4b1c_2.png" class="mx-auto mb-3" />
           <h4 class="font-semibold mb-1">3. Start Exploring</h4>
           <p>Receive weekly missions and AI-curated activities.</p>
         </div>
@@ -106,5 +115,6 @@
       © 2025 EduNest · <a href="#" class="underline">Privacy</a> · <a href="#" class="underline">Terms</a> ·
       <a href="#" class="underline">Contact</a>
     </footer>
+
   </body>
 </html>
