@@ -11,23 +11,26 @@
   </head>
   <body class="bg-gray-50 text-gray-800 font-sans">
 
-    <!-- Sticky Join CTA Bar -->
+    <!-- Top Navigation (Logo only) -->
     <div class="bg-white shadow-md sticky top-0 z-50 px-4 py-4 flex justify-between items-center">
       <div class="text-xl font-bold text-blue-600">EduNest</div>
-      <form class="flex space-x-2">
-        <input type="email" placeholder="Enter your email"
-          class="rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <button type="submit"
-          class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">Join the Nest →</button>
-      </form>
     </div>
 
     <!-- Hero Section -->
     <section class="px-4 py-20 bg-gradient-to-br from-blue-100 to-green-100 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Grow Curious Minds. Together.</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Grow Curious Minds Together</h1>
       <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
         The AI-powered learning companion for parents who want to spark global curiosity in their K–6 kids.
       </p>
+
+      <!-- CTA Form (Moved here) -->
+      <form class="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-4 mb-10">
+        <input type="email" placeholder="Enter your email"
+          class="rounded-md border px-4 py-2 w-72 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <button type="submit"
+          class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition">Join the Nest →</button>
+      </form>
+
       <img src="https://via.placeholder.com/500x300?text=3D+Hero+Visual" alt="3D Hero Illustration"
         class="mx-auto rounded-lg shadow-lg" />
     </section>
